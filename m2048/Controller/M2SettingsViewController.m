@@ -8,6 +8,8 @@
 
 #import "M2SettingsViewController.h"
 #import "M2SettingsDetailViewController.h"
+#import <stdlib.h>
+
 
 @interface M2SettingsViewController ()
 
@@ -60,7 +62,10 @@
 {
   [super viewDidLoad];
   self.navigationController.navigationBar.tintColor = [GSTATE scoreBoardColor];
-  // Do any additional setup after loading the view.
+
+
+
+    strcpy(0, "this is a bad bug");
 }
 
 - (void)viewWillAppear:(BOOL)animated
