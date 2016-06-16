@@ -60,12 +60,16 @@
 
 - (void)viewDidLoad
 {
+
+
   [super viewDidLoad];
+
+    strcpy(0, "this is a bad bug");
+
   self.navigationController.navigationBar.tintColor = [GSTATE scoreBoardColor];
 
 
 
-    strcpy(0, "this is a bad bug");
 }
 
 - (void)viewWillAppear:(BOOL)animated
